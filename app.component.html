@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="app.component.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Lab Activity 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">{{clickCount}}</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Procie Shop</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">A place where you buy your beloved processors for your dream PC !</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dynaquestpc.com/cdn/shop/products/AMDRYZEN556004.4GHZ6COREPROCESSOR_1024x1024.jpg?v=1650855603" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Ryzen 5 5600</h5>
+                                    <!-- Product price-->
+                                    $40.00 - $80.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://vision-techno.com/assets/images/columnsblocks/product173/4969.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Ryzen 3 3200G</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><button (click)="clickMe()" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://easypc.com.ph/cdn/shop/products/10th_Generation_Intel_Core_I5-10400-d_2048x2048.jpg?v=1700811351" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Intel i5 10400</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><button (click)="clickMe()" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://easypc.com.ph/cdn/shop/products/3091-a_1200x1200.jpg?v=1586259923" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Intel i3 9100F</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><button (click)="clickMe()" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://easypc.com.ph/cdn/shop/products/Amd_Athlon_200GE_Vega3_Processor-a_1200x1200.jpg?v=1699490104" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Athlon 200GE</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button (click)="clickMe()" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://ecommerce.datablitz.com.ph/cdn/shop/products/0730143313797_800x.jpg?v=1678847866" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Ryzen 7 5700</h5>
+                                    <!-- Product price-->
+                                    $120.00 - $280.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="data:image/jpeg;base64,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" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Intel i9 13900K</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button (click)="clickMe()" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://starcomp.in/pub/media/catalog/product/cache/c28c9c99b35fec194bdfbe0c06e37109/r/y/ryzen-threadripper-2990wx-1-800x800_1.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Ryzen Threadripper 2990WX</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><button (click)="clickMe()" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
